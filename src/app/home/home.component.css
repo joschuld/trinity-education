@@ -5,55 +5,46 @@
   color: black
 } */
 
+.columns {
+  display: flex;
+  /* border: solid 1px #333; */
+  margin-bottom: 20px;
+}
 
+.column {
+  padding: 20px;
+  /* border: 1px solid #333; */
+  text-align: center;
+  font-size: 18px;
+}
+
+.column h2 {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.columns-2 .column{
+  flex: 50%;
+  background-color: gainsboro;
+}
+
+.columns-3 .column{
+  flex: 33.33%;
+  background-color: gainsboro;
+}
 
 
 .column img {
     border-radius: 15px;
     position: relative;
-    opacity: 0.8;
-    float: left;
+    float: center;
+    object-fit: cover;
+    height: 400px;
+    width: 500px;
 }
 
-.centered {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: green;
-  font-size: 28px;
-  font-weight: bold;
-  font-style: italic;
+.img-desc {
+  font-size: 12px;
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-}
-
-.row h2 {
-    font-size: 35px;
-    font-weight: bold;
-    font-style: italic;
-    color: black;
-    border: solid 2px #333;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-footer{
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-}
