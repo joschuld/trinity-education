@@ -2,23 +2,40 @@
 <body>
   <!-- NAV BAR -->
  <nav class="topnav">
-  <a class ="active" href="#home">Home</a>    
-  <a href="about">About</a>
-  <a href="contact">Contact</a>
-  <a href="admissions">Admissions</a>"  
+
+    <!-- <div class="topnav-tag">
+      <p>Trinity Education</p>
+    </div> -->
+
+  <div class="topnav-icon">
+    <img src="assets/images/gold-tri.jpg" alt="Trinity Logo" width="50" height="50">
+  </div>
+
+  <div class="topnav-links">
+    <a href="#home">Home</a>    
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+    <a href="admissions">Admissions</a>" 
+  </div> 
+
 </nav>
 <!-- END NAV BAR -->
 
+
+<!-- page content, router-outlet -->
 <div class ="container">
  <router-outlet></router-outlet>
 </div>
 
+
+
+<!-- FOOTER -->
 <footer>
   <div class = "container">
       <p>Trinity Education 123 Main Street Thistown, USA 12345</p>
   </div>
-</footer>
-
+</footer> 
+<!-- /* END FOOTER -->
 </body>
 
 
