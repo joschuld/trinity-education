@@ -8,4 +8,8 @@
     <p>We are proud of our educators and the positive impact they have on the lives of our students. With their expertise and unwavering commitment, we ensure that our students receive a world-class education that prepares them for a bright future.</p>
 </div>
 
-<div ngfor class="teacher"></div>
+
+
+<div *ngfor= "let teacher of teacherList">
+    <p>{{teacher.name}}</p>
+</div>
